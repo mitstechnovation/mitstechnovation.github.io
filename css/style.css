@@ -187,18 +187,18 @@ html {
 }
 
 
-.social {
+.mits {
   position: absolute;
-  top: 10px;
+  top:0;
+  padding-bottom: 20px;
   right: 5%;
-  color: #999;
   text-transform: uppercase;
 }
 
-.social__link {
+.mits_link {
   display: inline-block;
   margin-left: 10px;
 }
-.social__link img {
+.mits__link img {
   vertical-align: middle;
 }
