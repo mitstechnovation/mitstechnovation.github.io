@@ -146,6 +146,47 @@ ul li.technos{
   }
 }
 
+@keyframes focus {
+  from {
+    transform: translateY(-1px);
+  }
+  to {
+    transform: translateY(1px);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  padding: 50px;
+}
+
+#hackathon {
+  display: block;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+#person-left .head {
+  animation: focus 1s infinite alternate linear;
+}
+
+#clock #hourhand {
+  animation: rotate 5s infinite linear;
+  transform-origin: 50% 87%;
+}
+#clock #minutehand {
+  animation: rotate 2s infinite linear;
+  transform-origin: 15% 87%;
+}
+
+
 .social {
   position: absolute;
   top: 10px;
