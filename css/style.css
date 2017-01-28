@@ -2,7 +2,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+.h4{
+  color: #ff6213;
+}
 main {
   display: flex;
   position: absolute;
@@ -13,12 +15,11 @@ main {
   text-transform: uppercase;
   overflow: hidden;
 }
+
 img.tech{
-  width:50px;
+  width: 50px;
 }
-img.tech_o{
-  width: 60px;
-}
+
 img.main {
   max-width: 100%;
   height: auto;
