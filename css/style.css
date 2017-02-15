@@ -202,3 +202,19 @@ html {
 .mits__link img {
   vertical-align: middle;
 }
+
+.ust {
+  position: absolute;
+  top:0;
+  padding-top: 20px;
+  left: 5%;
+  text-transform: uppercase;
+}
+
+.ust_link {
+  display: inline-block;
+  margin-right: 10px;
+}
+.ust__link img {
+  vertical-align: middle;
+}
