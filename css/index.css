@@ -10,7 +10,6 @@ video {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
@@ -19,7 +18,12 @@ video {
    opacity: .5;
 }
 
-
+.powered_by{
+  position: absolute;
+  bottom:0;
+  left:0;
+  padding-left: 20px;
+}
 
 
 
