@@ -3,9 +3,10 @@ video#bgvid {
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: auto;
+    min-height: 100vh;
     z-index: -100;
     background-size: cover;
+     background-repeat: no-repeat;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
