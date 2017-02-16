@@ -1,3 +1,6 @@
+html{
+  font-family: 'Jockey One', sans-serif;
+}
 video#bgvid {
     position: fixed;
     top: 50%;
@@ -22,6 +25,7 @@ video#bgvid {
 }
 .mob-text{
   color: #f36e21;
+  font-family: 'Nosifer', cursive;
 }
 
 .menu_button{
@@ -31,13 +35,17 @@ video#bgvid {
 
 .weight{
   font-weight: 500;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Nosifer', cursive;
 }
 
 .side-nav li {
   padding-top: 20px;
   padding-left: 20px;
 }
+.side-nav li a{
+  font-size: 20px;
+}
+
 .side-nav li a:hover{
   background-color: rgb(3, 155, 229);
   color: rgba(255,255,255,1);
