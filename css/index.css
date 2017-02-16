@@ -39,14 +39,19 @@ video#bgvid {
 }
 
 .side-nav li {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .side-nav li a{
   font-size: 20px;
 }
 
-.side-nav li a:hover{
+.side-nav li:hover{
   background-color: rgb(3, 155, 229);
   color: rgba(255,255,255,1);
+}
+
+.side-nav a:hover{
+  background-color: rgba(0,0,0,0.00); */
 }
