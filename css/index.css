@@ -1,20 +1,17 @@
-
-video {
+video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: auto;
     z-index: -100;
+    background-size: cover;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  -webkit-transition: 1s opacity;
-  transition: 1s opacity;
+    transform: translateX(-50%) translateY(-50%);
 }
-.stopfade {
-   opacity: .5;
-}
+
 
 .powered_by{
   position: absolute;
@@ -33,4 +30,8 @@ video {
   font-weight: 500;
   font-family: 'Alfa Slab One', cursive;
   color: rgba(255,255,255,1);
+}
+
+.side-nav{
+  width:20%;
 }
