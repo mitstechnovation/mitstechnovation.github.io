@@ -6,7 +6,7 @@ video#bgvid {
     min-height: 100%;
     z-index: -100;
     background-size: cover;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
