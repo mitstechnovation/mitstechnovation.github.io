@@ -14,45 +14,43 @@
 </head>
 
 <body>
-
-
-<div class="section no-pad-bot" id="index-banner">
-  <div class="menu_button">
-  <ul id="slide-out" class="side-nav">
-    <li><a href="#!">Event</a></li>
-    <li><a>Contact Us</a></li>
-  </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="small material-icons">menu</i></a>
+  <div class="homepage-hero-module">
+      <div class="video-container">
+          <div class="filter"></div>    <div class="menu_button">
+              <ul id="slide-out" class="side-nav">
+                <li><a href="#!">Event</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="small material-icons">menu</i></a>
+              </div>
+              <div class="row">
+               <div class="col s12">
+                 <br/>
+                 <br/>
+                 <br/>
+                 <br/>
+                 <br/>
+                 <br/>
+                 <h1 class="center weight">TECHNOVATION</h1>
+               </div>
+               <br/>
+               <br/>
+               <br/>
+               <div class="center">
+                  <a class="btn blue waves-effect waves-light" href="register.html">Register Now</a><br/><br/>
+                  <h5>March 3<sup>rd</sup>&nbsp;&amp;&nbsp;4<sup>th</sup>,&nbsp; 2017</h5>
+              </div>
+              </div>
+          <video autoplay loop class="fillWidth">
+              <source  src="Typing/Typing.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="Typing/Typing.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          </video>
+      </div>
+      <div class="powered_by">  <p>
+      <img src="images/ust.png" >
+      </p>
+      </div>
   </div>
-  <div class="row">
-   <div class="col s12">
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <h1 class="center weight">TECHNOVATION</h1>
-   </div>
-   <br/>
-   <br/>
-   <br/>
-   <div class="center">
-      <a class="btn blue waves-effect waves-light" href="register.html">Register Now</a><br/><br/>
-      <h5>March 3<sup>rd</sup>&nbsp;&amp;&nbsp;4<sup>th</sup>,&nbsp; 2017</h5>
-  </div>
-  </div>
-<video autoplay loop id="bgvid" poster="images/bg_mac.jpg">
-          <source src="Typing/Typing.webm" type="video/webm">
-          <source src="Typing/Typing.mp4" type="video/mp4">
-          <source src="Typing/Typing.ogv" type="video/ogg">
-  </video>
-
-  <div class="powered_by">  <p>
-  <img src="images/ust.png" >
-  </p>
-  </div>
-</div>
 
 
 
@@ -63,6 +61,69 @@
 $(".button-collapse").sideNav();
 // Initialize collapsible (uncomment the line below if you use the dropdown variation)
 $('.collapsible').collapsible();
+//jQuery is required to run this code
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
 </script>
 
 </body>
