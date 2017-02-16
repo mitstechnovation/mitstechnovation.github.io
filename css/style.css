@@ -218,3 +218,10 @@ html {
 .ust__link img {
   vertical-align: middle;
 }
+.know_more{
+  position: absolute;
+  bottom:0;
+  padding-bottom: 20px;
+  right: 5%;
+  text-transform: uppercase;
+}
