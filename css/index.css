@@ -71,3 +71,27 @@ sup.small{
   font-size:30px;
   top:-1em;
 }
+.ust {
+  position: absolute;
+  top:0;
+  right: 5%;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.ust_link {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+.ust__link img {
+  vertical-align: middle;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: 1px solid #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
+}
+
+
+.input-field .prefix.active{
+  color: #2196F3;
+}
