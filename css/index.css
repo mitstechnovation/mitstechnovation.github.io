@@ -24,8 +24,9 @@ video#bgvid {
   padding-left: 20px;
 }
 .mob-text{
-  color: #f36e21;
-  font-family: 'Nosifer', cursive;
+  color: #fff;
+  font-size:3em;
+  font-family: 'Patua One', cursive;
 }
 
 .menu_button{
@@ -34,8 +35,9 @@ video#bgvid {
 }
 
 .weight{
-  font-weight: 500;
-  font-family: 'Nosifer', cursive;
+  font-weight: 600;
+  font-size: 5em;
+  font-family: 'Patua One', cursive;
 }
 
 .side-nav li {
@@ -45,13 +47,27 @@ video#bgvid {
 }
 .side-nav li a{
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
 }
-
+.side-nav{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .side-nav li:hover{
   background-color: rgb(3, 155, 229);
-  color: rgba(255,255,255,1);
+
 }
 
 .side-nav a:hover{
-  background-color: rgba(0,0,0,0.00); */
+  background-color: rgba(0,0,0,0.00);
+  color: rgba(255,255,255,1);
+}
+
+.tech_header{
+  font-size:20px;
+}
+
+sup.small{
+  font-weight: 100;
+  font-size:30px;
+  top:-1em;
 }
