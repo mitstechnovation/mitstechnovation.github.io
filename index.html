@@ -12,7 +12,19 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" href="css/index.css">
 
-
+<style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(images/66.gif) center no-repeat #fff;
+}
+</style>
 </head>
 
 <body>
@@ -87,6 +99,13 @@ $(".button-collapse").sideNav();
 // Initialize collapsible (uncomment the line below if you use the dropdown variation)
 $('.collapsible').collapsible();
 </script>
-
+<script>
+//paste this code under the head tag or in a separate js file.
+// Wait for window load
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");;
+});
+</script>
 </body>
 </html>
