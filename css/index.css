@@ -97,3 +97,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .input-field .prefix.active{
   color: #2196F3;
 }
+
+.tabs .indicator{
+  background-color: #2196F3;
+}
